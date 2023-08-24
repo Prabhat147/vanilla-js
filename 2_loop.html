@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For loop in js</title>
+</head>
+<body>
+    Enter your name here:
+    <input type="text" id="name">
+    How many times to print the name:
+    <input type="number" id="times">
+
+    <p id="para">
+        
+    </p>
+
+    <input type="button" value="Click me" onclick="printName()">
+    <script>
+
+    function printName(){
+        var name = document.getElementById("name").value;
+        var num = document.getElementById("times").value;
+        var output ="";
+
+        for(i=1; i<=num; i++){
+            output += name + " ";
+
+        }
+
+        document.getElementById("para").innerHTML= output;
+    }
+
+        
+    </script>
+</body>
+</html>

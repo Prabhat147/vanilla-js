@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF else</title>
+</head>
+<body>
+    Enter a number between 0 to 20.
+    <input type="number" id="number">
+
+    <p id="para">
+
+    </p>
+    <input type="button" name="button" value="Click me" onclick="numchecker()">
+
+
+
+<script>
+
+    function numchecker(){
+        var num = document.getElementById("number").value;
+    
+
+        if (num > 5)
+            // console.log("Hello para");
+            document.getElementById("para").innerHTML="Greater than 5"
+        else if (num <5)
+            document.getElementById("para").innerHTML="Less than 5"
+        else
+        document.getElementById("para").innerHTML="Equal than 5"
+            
+    }
+
+</script>
+</body>
+
+
+</html>
