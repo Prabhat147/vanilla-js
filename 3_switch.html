@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch case</title>
+    <style>
+        p{
+            border: 2px solid;
+            height: 2em;
+        }
+    </style>
+</head>
+<body>
+
+    Choose a alphabet between (a to e) and you can get a word:
+    <input type="text" id="alphabet">
+    <input type="button" value="Generate Word" onclick="generateWord()">
+
+    <p id="output"></p>
+
+
+    <script>
+        function generateWord(){
+        var alpha = document.getElementById("alphabet").value;
+
+        // console.write("var");
+
+        switch (alpha) {
+
+            case "a":
+            case "A":
+                document.getElementById("output").innerHTML="Apple"
+            break;
+            
+            case 'b':
+            case "B":
+                document.getElementById("output").innerHTML="Ball"
+            break;
+
+            case 'c':
+            case "C":
+                document.getElementById("output").innerHTML="Cat"
+            break;
+
+            case 'd':
+            case "D":
+                document.getElementById("output").innerHTML="Dog"
+            break;
+
+            case 'e':
+            case "E":
+                document.getElementById("output").innerHTML="Elephant"
+            break;
+
+            default:
+                document.getElementById("output").innerHTML="Error!!"                
+        }
+        }
+
+    </script>
+</body>
+</html>

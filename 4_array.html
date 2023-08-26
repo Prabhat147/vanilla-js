@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array in js</title>
+</head>
+<style>
+    #show{
+        padding: 1rem;
+        border: 2px solid red;
+    }
+</style>
+<body>
+
+    <div id="show">
+    </div>
+    <script>
+        //declaring the values in a array
+        const fruits = ['apple', 'banana','orange'];
+        //printing the value in a postion
+        document.write(fruits[0]);
+
+        // asking to choose a index
+        index = prompt("Enter your choice between 0-2");
+        fruit = fruits.at(index);
+        document.getElementById("show").innerHTML= fruit;
+
+    </script>
+</body>
+</html>
