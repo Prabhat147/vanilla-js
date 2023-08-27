@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling in JS</title>
+</head>
+<body>
+    <h2>Event Handling in JS.</h2>
+    <p>
+        To know if the button was clicked.
+    </p>
+    <p id="btnChecker"></p>
+
+    <button id="btn">
+        You may click me!!  
+    </button>
+</body>
+<script>
+     const btn = document.getElementById('btn');
+
+    btn.addEventListener('click', function(){
+        document.getElementById('btnChecker').innerHTML = 'Button was clicked..';
+    });
+
+</script>
+</html>

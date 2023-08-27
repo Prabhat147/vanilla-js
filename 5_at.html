@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checking at function</title>
+</head>
+<body>
+    <p>
+        This are a collection of fruits. Among them one is <p id="name"></p>
+
+    </p>
+
+    <script>
+        const fruits=["apple", "banana", "papaya"];
+        // let fruit = fruits[2];
+        var index = prompt("Choose a random number between 0-2");
+        const fruit = fruits.at(index);
+
+    document.getElementById('name').innerHTML=fruit;
+    </script>
+</body>
+</html>
