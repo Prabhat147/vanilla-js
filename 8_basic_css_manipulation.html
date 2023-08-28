@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic CSS manipulation</title>
+    <style>
+        .highlight{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+
+    <p>This is the <span id="targetText">highlighted</span> text.</p>
+    
+    <script type="text/javascript">
+        const targetText = document.getElementById('targetText');
+
+        targetText.classList.add("highlight");
+
+    </script>
+</body>
+</html>
